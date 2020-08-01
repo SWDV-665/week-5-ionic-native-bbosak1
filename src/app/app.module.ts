@@ -13,6 +13,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { GroceriesServiceProvider } from '../providers/groceries-service/groceries-service';
 import { InputDialogServiceProvider } from '../providers/input-dialog-service/input-dialog-service';
 
+import { SocialSharing } from '@ionic-native/social-sharing';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -38,7 +40,8 @@ import { InputDialogServiceProvider } from '../providers/input-dialog-service/in
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     GroceriesServiceProvider,
-    InputDialogServiceProvider
+    InputDialogServiceProvider,
+    SocialSharing
   ]
 })
 export class AppModule {}
