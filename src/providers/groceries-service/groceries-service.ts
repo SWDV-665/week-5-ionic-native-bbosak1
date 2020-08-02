@@ -12,7 +12,6 @@ export class GroceriesServiceProvider {
   items = [];
 
   constructor() {
-    console.log('Hello GroceriesServiceProvider Provider');
   }
 
   getItems() {

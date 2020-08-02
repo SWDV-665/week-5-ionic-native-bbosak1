@@ -66,7 +66,6 @@ export class HomePage {
   }
 
   addItem() {
-    console.log("Adding Item");
     this.inputDialogService.showPrompt();
   }
 

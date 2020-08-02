@@ -12,7 +12,6 @@ import { GroceriesServiceProvider } from '../../providers/groceries-service/groc
 export class InputDialogServiceProvider {
 
   constructor(public alertCtrl: AlertController, public dataService: GroceriesServiceProvider) {
-    console.log('Hello InputDialogServiceProvider Provider');
   }
 
 
@@ -42,7 +41,6 @@ export class InputDialogServiceProvider {
         {
           text: 'Save',
           handler: item => {
-            console.log('Saved clicked', item);
             if (index !== undefined) {
               this.dataService.editItem(item, index);
             }
